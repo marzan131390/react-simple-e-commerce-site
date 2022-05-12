@@ -1,0 +1,28 @@
+.semi-header {
+    background-color: #151514;
+    padding: .6rem;
+}
+.semi-header .content {
+    margin-left: 10rem;
+}
+.content input{
+    width: 70vw;
+    padding: .6rem;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+.content img{
+    position: relative;
+    top: 1.2rem;
+    left: .5rem;
+    cursor: pointer;
+}
+.content span {
+    color: #FF9800;
+    font-size: 1.2rem;
+    position: relative;
+    top: .8rem;
+    left: .5rem;
+    font-weight: 700;
+}

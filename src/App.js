@@ -1,17 +1,12 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header/Header';
+import SemiHeader from './components/Semi-header/SemiHeader';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h1>Hello World .This File is for creating My First Project...Oviously React Project..</h1>
-        <p>Okk I understand.</p>
-      </header>
+    <div>
+      <Header></Header>
+      <SemiHeader></SemiHeader>
     </div>
   );
 }

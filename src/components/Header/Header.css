@@ -1,0 +1,28 @@
+.header {
+    text-align: center;
+    margin-top: 1rem;
+}
+.header img {
+    width: 15rem;
+}
+.nav-link {
+    margin-top: 1.5rem;
+    background-color: #000000;
+}
+.nav-link ul {
+    display: flex;
+    padding: 1rem;
+    margin-left: 2.8rem;
+}
+.nav-link ul li {
+    margin-left: 3rem;
+    list-style: none;
+}
+.nav-link ul li a{
+    color: rgb(219, 200, 200);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.nav-link ul li a:hover, .nav-link ul li .active{
+    color: rgb(204, 149, 149);
+}
