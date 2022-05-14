@@ -38,6 +38,9 @@ small span {
     justify-content: center;
     align-items: center;
 }
+.custom-btn:hover{
+    background-color: rgb(181, 125, 20);
+}
 .icon{
     color: black;
 }
