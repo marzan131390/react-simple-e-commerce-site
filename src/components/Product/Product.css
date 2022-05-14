@@ -1,0 +1,43 @@
+.product-container{
+    display: flex;
+    border-bottom: 2px solid lightgray;
+    padding: 2rem;
+}
+.img-content{
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+}
+.product-content{
+    width: 60%;
+}
+.product-content h3{
+    color: rgb(56, 56, 180);
+    font-weight: 400;
+    cursor: pointer;
+}
+.inner-product-content{
+    display: flex;
+    gap: 4vw;
+}
+small span {
+    color: rgb(133, 37, 37);
+    font-weight: 700;
+    cursor: pointer;
+}
+.custom-btn{
+    border: none;
+    padding: .6rem 1.4rem;
+    background-color: rgb(197, 143, 42);
+    border-radius: .6rem;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    gap: .7rem;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    color: black;
+}
