@@ -4,13 +4,13 @@ const Cart = (props) => {
     let  cart = props.cart;
     let shipping = 0;
     let total = 0;
-    console.log(cart);
-    cart.map((single) => {
+    for(let i = 0; i<cart.length; i++) {
+        let single = cart[i];
         let shippingPrice = single.shipping;
         let totalPrice = single.price;
         shipping = shipping + shippingPrice;
         total = total + totalPrice;
-    })
+    }
     //Styles For Shipping..
     if(total >500) {
         shipping = 0;
@@ -29,15 +29,15 @@ const Cart = (props) => {
             <p className="order-num">Items Ordered: {cart.length}</p>
             <div className="product-info-container"> 
                 <div className="product-info-name"> 
+                    <p>Product Price:</p>
                     <p><small>Shipping:</small></p>
                     <p><small>Tax:</small></p>
-                    <p>Product Price:</p>
                     <h3>Total Price: </h3>
                 </div>
                 <div className="product-info-price">
-                    <p><small>${shipping}</small></p>
-                    <p><small>${tax}</small></p>
                     <p>${total}</p>
+                    <p><small>${shipping}</small></p>
+                    <p><small>${tax}</small></p>           
                     <h5>${grandTotal}</h5>    
                 </div>
             </div>
