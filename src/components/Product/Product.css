@@ -1,3 +1,6 @@
+*{
+    text-decoration: none;
+}
 .product-container{
     display: flex;
     border-bottom: 2px solid lightgray;
@@ -20,10 +23,13 @@
     display: flex;
     gap: 4vw;
 }
-small span {
+.inner-product-content div small span {
     color: rgb(133, 37, 37);
     font-weight: 700;
     cursor: pointer;
+}
+.features-lists{
+    margin: .6rem 0 0 3rem;
 }
 .custom-btn{
     border: none;

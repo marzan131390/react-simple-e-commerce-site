@@ -11,6 +11,7 @@ import {
 import Review from './components/Review/Review';
 import Manage from './components/Managing/Manage';
 import NoMatch from './components/NoMatch/NoMatch';
+import ProductDetail from './components/ProductDetail/ProductDetail';
 function App() {
   return (
     <div>
@@ -22,6 +23,7 @@ function App() {
           <Route path="/review" element={<Review></Review>} /> 
           <Route path="/" element = {<Shop></Shop>} />
           <Route path="/manage" element={<Manage></Manage>} />
+          <Route path="/product/:productKey" element= {<ProductDetail></ProductDetail>} />
           <Route path="*" element={<NoMatch></NoMatch>} />
         </Routes>
       </BrowserRouter>
