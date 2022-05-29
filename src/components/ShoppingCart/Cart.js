@@ -42,7 +42,12 @@ const Cart = (props) => {
                     <h5>${grandTotal}</h5>    
                 </div>
             </div>
-            <Link to="/review"><button className="custom-btn review-btn">Review Your Orders</button></Link> 
+            {
+                props.reviewOrder && <Link to="/review"><button className="custom-btn review-btn">Review Your Orders</button></Link>
+            } 
+            {
+                props.placeOrder && <button className="review-btn custom-btn">Place Your Order</button>
+            }
         </div>
     );
 };
