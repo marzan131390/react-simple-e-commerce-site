@@ -2,15 +2,23 @@ import React from 'react';
 import './Cart.css'
 import {Link} from 'react-router-dom';
 const Cart = (props) => {
+    console.log(props);
     let  cart = props.cart;
     let shipping = 0;
     let total = 0;
     for(let i = 0; i<cart.length; i++) {
         let single = cart[i];
         let shippingPrice = single.shipping;
-        let totalPrice = single.price;
+        let totalPrice = 0;
+        if(single.quantity) {
+            totalPrice = single.price * single.quantity;
+        }
+        else{
+            totalPrice = single.price;
+        }
+        
         shipping = shipping + shippingPrice;
-        total = total + totalPrice;
+        total = total + totalPrice ;
     }
     //Styles For Shipping..
     if(total >500) {

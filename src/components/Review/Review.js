@@ -3,6 +3,7 @@ import './Review.css';
 import fakeData from '../../fakeData/products.json';
 import Product from '../Product/Product';
 import Cart from '../ShoppingCart/Cart';
+import {removeFromDb} from '../../utilities/fakedb';
 const Review = () => {
     let storageData = JSON.parse(localStorage.getItem('shopping-cart'));
     const [cart, setCart] = useState([]);
@@ -16,12 +17,20 @@ const Review = () => {
         });
         setCart(cartProducts);
     }, []);
-    // console.log(pro);
+    console.log(cart);
+    const removeProduct = (id) => {
+        console.log("Clicked okk");
+        const newCart = cart.filter(cart => cart.key !== id);
+        setCart(newCart);
+        removeFromDb(id);
+    }
     return (
         <div className="shop-container">
             <div className="products-container"> 
-                {cart.map(product => <Product product = {product} removeBtn={true}></Product>)
+                {
+                    cart.map(product => <Product product = {product} removeBtn={true} removeProduct={removeProduct} ></Product>)
                 }
+                
             </div>
             <div className="cart-container"> 
                 <Cart cart = {cart} placeOrder = {true}></Cart>
