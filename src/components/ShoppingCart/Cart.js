@@ -54,7 +54,7 @@ const Cart = (props) => {
                 props.reviewOrder && <Link to="/review"><button className="custom-btn review-btn">Review Your Orders</button></Link>
             } 
             {
-                props.placeOrder && <button className="review-btn custom-btn">Place Your Order</button>
+                props.placeOrder && <Link to="/manage"><button className="review-btn custom-btn">Place Your Order</button></Link>
             }
         </div>
     );

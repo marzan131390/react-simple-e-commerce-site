@@ -1,10 +1,11 @@
 import React from 'react';
-import './Manage.css'
+import './Manage.css';
+import gift from '../../images/giphy.gif';
 const Manage = () => {
     return (
         <div className="Managing-content">
-            <h3>This is for Managing content container....okk</h3>
-            <h5>I am badly in need a High configuration Laptop.</h5>
+            <h1>Congratulations!! You have successfully ordered your products</h1>
+            <img src={gift} alt="" />
         </div>
     );
 };
